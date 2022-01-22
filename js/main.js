@@ -73,7 +73,7 @@ var waited_develop = function() {
             waitedli[i].addEventListener("click", myfunction, false);
 
             function myfunction() {
-                alert("待开发");
+                alert("お待ちください");
             }
 
         }
@@ -81,7 +81,7 @@ var waited_develop = function() {
             waitedli[i].attachEvent("onclick", myfunction);
 
             function myfunction() {
-                alert("待开发");
+                alert("お待ちください");
             }
         }
     }
@@ -274,12 +274,12 @@ var checkUsername = function() {
     var myreg = /^[\u4e00-\u9fa5 ]{2,20}$/;
     var myreg1 = /^[a-zA-Z\/ ]{2,20}$/;
     if (username == "" || username == null) {
-        usernamecheck.innerText = "姓名不能为空";
+        usernamecheck.innerText = "名前を入力してください";
     } else {
         if (myreg.test(username) || myreg1.test(username)) {
             usernamecheck.innerText = "";
         } else {
-            usernamecheck.innerText = "姓名格式错误";
+            usernamecheck.innerText = "入力された名前の形式はご登録いただけません";
         }
     }
 }
@@ -289,12 +289,12 @@ var checkMail = function() {
     usermailcheck.innerText = "";
     var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
     if (usermail == "" || usermail == null) {
-        usermailcheck.innerText = "邮箱不能为空";
+        usermailcheck.innerText = "メールアドレスを入力してください";
     } else {
         if (myreg.test(usermail)) {
             usermailcheck.innerText = "";
         } else {
-            usermailcheck.innerText = "邮箱格式错误";
+            usermailcheck.innerText = "入力されたメールアドレスの形式はご登録いただけません";
         }
     }
 }
@@ -303,7 +303,7 @@ var checkTheme = function() {
     var userthemecheck = document.getElementById("check_usertheme");
     userthemecheck.innerText = "";
     if (usertheme == "" || usertheme == null) {
-        userthemecheck.innerText = "主题不能为空";
+        userthemecheck.innerText = "テーマを入力してください";
     }
 }
 
@@ -312,7 +312,7 @@ var checkCon = function() {
     var userconcheck = document.getElementById("check_usercon");
     userconcheck.innerText = "";
     if (usercon == "" || usercon == null) {
-        userconcheck.innerText = "内容不能为空";
+        userconcheck.innerText = "内容を入力してください";
     }
 }
 
