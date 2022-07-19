@@ -234,7 +234,7 @@ var canbs = function() {
         if (con.style.display == "block") {
             deg += 4;
             bsT(deg);
-            if (deg > 216) {
+            if (deg > 252) {
                 clearInterval(time);
             }
         }
